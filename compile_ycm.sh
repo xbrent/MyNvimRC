@@ -1,8 +1,12 @@
 echo "\033[32m install necessary packages \033[0m"
 echo ""
 
+#CLANG - Debian http://apt.llvm.org for your /etc/apt/sources.list
+#deb http://apt.llvm.org/stretch/ llvm-toolchain-stretch main
+#deb-src http://apt.llvm.org/stretch/ llvm-toolchain-stretch main
 
 sudo apt-get install cppcheck flawfinder silversearcher-ag shellcheck exuberant-ctags pylint clang-format-8 clang-tools-8
+sudo apt-get install libmsgpackc2 libvterm0 libtermkey1 libluajit-5.1-2 libjemalloc1
 
 echo "\033[32m Compile ycm core \033[0m"
 echo ""
